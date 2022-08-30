@@ -1,0 +1,7 @@
+.border-dot {
+  border: 1px dotted gray;
+}
+.style-nav:hover {
+  background-color: gray;
+}
+
