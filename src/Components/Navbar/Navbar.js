@@ -12,23 +12,17 @@ import icon8 from "../../Assest/setting-2.png";
 import "../Style/Style.css";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
   return (
     <div className="flex">
       <div className="sticky top-0 w-56 bg-base-100 h-[120vh] pt-16  duration-300 border-r-2 border-gray-100 shadow-lg">
         <ul className="">
           <li className="hover:bg-gray-200">
             <Link
-              to="/"
+              to="dashboard"
               className="flex rounded-md px-6 py-4 cursor-pointer hover:bg-light-white text-gray-600 items-center gap-x-4"
             >
               <img title="Dashboard" src={icon1} alt="" />
-              <span
-                onClick={() => setOpen(true)}
-                className="origin-lef text-lg"
-              >
-                Dashboard
-              </span>
+              <span className="origin-lef text-lg">Dashboard</span>
             </Link>
           </li>
           <li className="hover:bg-gray-200">

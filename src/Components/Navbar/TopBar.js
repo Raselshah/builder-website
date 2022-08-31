@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../Assest/logo.png";
 import search from "../../Assest/Vector (1).png";
 import "../Style/Style.css";
+import { Link } from "react-router-dom";
 
 const TopBar = () => {
   return (
@@ -25,9 +26,9 @@ const TopBar = () => {
             </svg>
           </label>
         </div>
-        <a class="w-64 h-20 normal-case text-xl">
+        <Link to="/" class="w-64 h-20 normal-case text-xl">
           <img className="w-64 h-20" src={logo} alt="" />
-        </a>
+        </Link>
       </div>
       <div class="navbar-center hidden lg:flex">
         <div class="form-control relative mt-4">
@@ -37,8 +38,10 @@ const TopBar = () => {
             class="input input-bordered w-96 h-11 z-20"
           />
 
-          <button class="btn bg-white border-none hover:bg-white absolute top-0 right-2
-           rounded-l-none ">
+          <button
+            class="btn bg-white border-none hover:bg-white absolute top-0 right-2
+           rounded-l-none "
+          >
             <img className="w-4 h-4 z-30" src={search} alt="" />
           </button>
         </div>
