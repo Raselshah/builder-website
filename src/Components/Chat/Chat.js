@@ -1,5 +1,9 @@
 import React from "react";
 import icon from "../../Assest/icons8-ellipsis-100 (1) 1.png";
+import send from "../../Assest/Send.png";
+import camera from "../../Assest/Subtract.png";
+
+import "../Style/Style.css";
 
 const Chat = () => {
   return (
@@ -35,7 +39,7 @@ const Chat = () => {
                 1
               </p>
             </div>
-            <hr />
+            <hr className="mt-2" />
             <div className="flex justify-between items-center gap-x-2 mt-4">
               <div className="flex justify-center items-center">
                 <div class="avatar">
@@ -122,7 +126,51 @@ const Chat = () => {
 
         <div className="div">
           <div className="div">
-            <p>Today</p>
+            <p className="text-center mt-6">Today</p>
+          </div>
+
+          <div className="px-4 mt-12">
+            <div className="flex justify-end">
+              <p className="text-sm bg-sky-300/70 chat">Hi, How are you ?</p>
+            </div>
+            <div className="flex justify-start mt-6">
+              <p className="text-sm bg-gray-300/70 chatTwo">
+                I’m doing good. What are you doing ?
+              </p>
+            </div>
+
+            <div className="flex justify-end mt-6">
+              <p className="text-sm bg-sky-300/70 chat">
+                I’m working on my app design.
+              </p>
+            </div>
+
+            <div className="flex justify-start mt-6">
+              <p className="text-sm bg-gray-300/70 chatTwo">
+                That sounds great!
+              </p>
+            </div>
+
+            <div class="form-control top-32 relative">
+              <button
+                class="btn bg-white border-none hover:bg-white absolute top-0 left-2
+           rounded-l-none "
+              >
+                <img className="w-4 h-4 z-30" src={camera} alt="" />
+              </button>
+              <input
+                type="text"
+                placeholder="Search here...."
+                class="input input-bordered pl-16 w-full bg-gray-100 h-11 z-20"
+              />
+
+              <button
+                class="btn bg-white border-none hover:bg-white absolute top-0 right-2
+           rounded-l-none "
+              >
+                <img className="w-4 h-4 z-30" src={send} alt="" />
+              </button>
+            </div>
           </div>
         </div>
       </div>

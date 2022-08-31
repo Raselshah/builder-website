@@ -12,3 +12,16 @@
 .button:hover {
   background-color: #2eacaa;
 }
+
+.chat {
+  padding: 8px;
+
+  border-radius: 25px;
+  border-bottom-right-radius: 0px;
+}
+.chatTwo {
+  padding: 8px;
+
+  border-radius: 25px;
+  border-bottom-left-radius: 0px;
+}
