@@ -67,7 +67,7 @@ const Property = () => {
       <div class="overflow-x-auto mt-12 border rounded-lg">
         <table class="table w-full">
           <thead>
-            <tr>
+            <tr className="text-center">
               <th>Id </th>
               <th> Property Name</th>
               <th> Property Type</th>
@@ -81,12 +81,21 @@ const Property = () => {
           </thead>
           {tableData.map((table, index) => (
             <tbody key={index}>
-              <tr className="text-sm hover border-b-2">
+              <tr className="text-sm text-center hover border-b-2">
                 <td>{table.id}</td>
                 <td>{table.name}</td>
                 <td>{table.type}</td>
                 <td>{table.possession}</td>
-                <td>{table.status}</td>
+                <td>
+                  {" "}
+                  <button
+                    className={`bg-green-500/80 ${
+                      table.status === "Pending" ? "bg-orange-500/70" : ""
+                    } p-2 rounded-lg text-white`}
+                  >
+                    {table.status}
+                  </button>{" "}
+                </td>
                 <td>{table.rate}</td>
                 <td>
                   <button>
