@@ -14,60 +14,60 @@ import "../Style/Style.css";
 const Navbar = () => {
   return (
     <div className="flex">
-      <div className="sticky top-0 w-56 bg-base-100 h-screen pt-16  duration-300 border-r-2 border-gray-100 shadow-lg">
+      <div className="sticky top-0 w-56 bg-base-100 h-[120vh] pt-16  duration-300 border-r-2 border-gray-100 shadow-lg">
         <ul className="">
           <li className="hover:bg-gray-200">
             <Link
               to="/"
-              className="flex rounded-md px-6 py-2 cursor-pointer hover:bg-light-white text-gray-600 text-sm items-center gap-x-4"
+              className="flex rounded-md px-6 py-4 cursor-pointer hover:bg-light-white text-gray-600 items-center gap-x-4"
             >
               <img title="Dashboard" src={icon1} alt="" />
-              <span className="origin-left duration-200">Dashboard</span>
+              <span className="origin-lef text-lg">Dashboard</span>
             </Link>
           </li>
           <li className="hover:bg-gray-200">
             <Link
-              to="/"
-              className="flex rounded-md px-6 py-2 cursor-pointer hover:bg-light-white text-gray-600 text-sm items-center gap-x-4"
+              to="/property"
+              className="flex rounded-md px-6 py-4 cursor-pointer hover:bg-light-white text-gray-600  items-center gap-x-4"
             >
               <img title="Property" src={icon2} alt="" />
-              <span className="origin-left duration-200">Property</span>
+              <span className="origin-left text-lg">Property</span>
             </Link>
           </li>
           <li className="hover:bg-gray-200">
             <Link
               to="/"
-              className="flex rounded-md px-6 py-2 cursor-pointer hover:bg-light-white text-gray-600 text-sm items-center gap-x-4"
+              className="flex rounded-md px-6 py-4 cursor-pointer hover:bg-light-white text-gray-600 items-center gap-x-4"
             >
               <img title="Lead" src={icon3} alt="" />
-              <span className="origin-left duration-200">Lead</span>
+              <span className="origin-left text-lg">Lead</span>
             </Link>
           </li>
           <li className="hover:bg-gray-200">
             <Link
-              to="/"
-              className="flex rounded-md px-6 py-2 cursor-pointer hover:bg-light-white text-gray-600 text-sm items-center gap-x-4"
+              to="chat"
+              className="flex rounded-md px-6 py-4 cursor-pointer hover:bg-light-white text-gray-600  items-center gap-x-4"
             >
               <img title="Chat" src={icon4} alt="" />
-              <span className="origin-left duration-200">Chat</span>
+              <span className="origin-left text-lg">Chat</span>
             </Link>
           </li>
           <li className="hover:bg-gray-200">
             <Link
               to="/"
-              className="flex rounded-md px-6 py-2 cursor-pointer hover:bg-light-white text-gray-600 text-sm items-center gap-x-4"
+              className="flex rounded-md px-6 py-4 cursor-pointer hover:bg-light-white text-gray-600 items-center gap-x-4"
             >
               <img title="Sales Partner" src={icon5} alt="" />
-              <span className="origin-left duration-200">Sales Partner</span>
+              <span className="origin-left text-lg">Sales Partner</span>
             </Link>
           </li>
           <li className="hover:bg-gray-200">
             <Link
               to="/"
-              className="flex rounded-md px-6 py-2 cursor-pointer hover:bg-light-white text-gray-600 text-sm items-center gap-x-4"
+              className="flex rounded-md px-6 py-4 cursor-pointer hover:bg-light-white text-gray-600 items-center gap-x-4"
             >
               <img title="Calendar" src={icon6} alt="" />
-              <span className="origin-left duration-200">Calendar</span>
+              <span className="origin-left text-lg">Calendar</span>
             </Link>
           </li>
 
@@ -75,25 +75,24 @@ const Navbar = () => {
           <li className="hover:bg-gray-200">
             <Link
               to="/"
-              className="flex rounded-md mt-12 px-6 py-2 cursor-pointer hover:bg-light-white text-gray-600 text-sm items-center gap-x-4"
+              className="flex rounded-md mt-12 px-6 py-4 cursor-pointer hover:bg-light-white text-gray-600  items-center gap-x-4"
             >
               <img title="Profile" src={icon7} alt="" />
-              <span className="origin-left duration-200">Profile</span>
+              <span className="origin-left text-lg">Profile</span>
             </Link>
           </li>
           <li className="hover:bg-gray-200">
             <Link
               to="/"
-              className="flex rounded-md px-6 py-2 cursor-pointer hover:bg-light-white text-gray-600 text-sm items-center gap-x-4"
+              className="flex rounded-md px-6 py-4 cursor-pointer hover:bg-light-white text-gray-600 items-center gap-x-4"
             >
               <img title="Profile" src={icon8} alt="" />
-              <span className="origin-left duration-200">Setting</span>
+              <span className="origin-left text-lg">Setting</span>
             </Link>
           </li>
         </ul>
       </div>
       <div className="flex-1">
-        <h2>hh</h2>
         <Outlet />
       </div>
     </div>
