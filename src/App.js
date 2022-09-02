@@ -11,15 +11,15 @@ import Dashboard from "./Components/Dashboard/Dashboard";
 function App() {
   return (
     <div className="App">
-      <TopBar />
+      {/* <TopBar /> */}
 
       <Routes>
-        <Route path="/" element={<Navbar />}>
+        <Route path="/" element={<Login />} />
+        <Route path="/navbar" element={<Navbar />}>
           <Route path="property" element={<Property />} />
           <Route path="chat" element={<Chat />} />
           <Route path="dashboard" element={<Dashboard />} />
         </Route>
-        <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>
     </div>
