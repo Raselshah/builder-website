@@ -24,32 +24,32 @@ const Signup = () => {
 
         <form style={{ width: "434px" }} className="pr-16 mx-auto mt-12">
           <input
-            className="border-b-2 text-lg pt-6 w-full"
+            className=" placeholder:text-slate-400 block w-full border-b-2 border-slate-300 py-2 pr-3 focus:outline-none focus:border-gray-500 focus:ring-0 sm:text-sm"
             type="text"
             name=""
             placeholder="Name"
             id=""
           />
           <input
-            className="border-b-2 text-lg pt-6 w-full"
+            className=" placeholder:text-slate-400 block w-full border-b-2 border-slate-300 py-2 pr-3 focus:outline-none focus:border-gray-500 focus:ring-0 sm:text-sm mt-4"
             type="text"
             name=""
             placeholder="Email Address"
             id=""
           />
           <input
-            className="border-b-2 text-lg pt-6 w-full"
+            className=" placeholder:text-slate-400 block w-full border-b-2 border-slate-300 py-2 pr-3 focus:outline-none focus:border-gray-500 focus:ring-0 sm:text-sm mt-4"
             type="text"
             name=""
             placeholder="Mobile No."
             id=""
           />
 
-          <div class="text-lg pt-6 relative flex justify-between items-center">
+          <div class="text-lg mt-4 relative flex justify-between items-center">
             <input
               type="password"
               placeholder="Password"
-              class=" border-b-2  w-full text-lg z-30"
+              class=" placeholder:text-slate-400 block w-full border-b-2 border-slate-300 py-2 pr-3 focus:outline-none focus:border-gray-500 focus:ring-0 sm:text-sm z-30"
             />
 
             <button

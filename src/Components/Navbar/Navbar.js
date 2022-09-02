@@ -39,7 +39,7 @@ const Navbar = () => {
             </li>
             <li className="hover:bg-gray-200">
               <Link
-                to="/"
+                to="lead"
                 className="flex rounded-md px-6 py-4 cursor-pointer hover:bg-light-white text-gray-600 items-center gap-x-4"
               >
                 <img title="Lead" src={icon3} alt="" />
@@ -77,7 +77,7 @@ const Navbar = () => {
             <div className="border-dot mt-12"></div>
             <li className="hover:bg-gray-200">
               <Link
-                to="/"
+                to="profile"
                 className="flex rounded-md mt-12 px-6 py-4 cursor-pointer hover:bg-light-white text-gray-600  items-center gap-x-4"
               >
                 <img title="Profile" src={icon7} alt="" />
