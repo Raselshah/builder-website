@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const TopBar = () => {
   return (
-    <div class="navbar bg-base-100 border-b-2 border-gray-100 shadow-sm h-20">
+    <div class="navbar bg-base-100 border-b-2 border-gray-100 shadow-sm h-20 ">
       <div class="navbar-start">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -26,7 +26,7 @@ const TopBar = () => {
             </svg>
           </label>
         </div>
-        <Link to="/" class="w-64 h-20 normal-case text-xl">
+        <Link to="/dashboard" class="w-64 h-20 normal-case text-xl">
           <img className="w-64 h-20" src={logo} alt="" />
         </Link>
       </div>

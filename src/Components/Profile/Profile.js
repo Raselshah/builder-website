@@ -7,13 +7,11 @@ const Profile = () => {
       style={{
         width: "980px",
         height: "880px",
-        marginTop: "70px",
-        marginBottom: "50px",
         margin: "auto",
         border: "2px solid #E5E5E5",
         borderRadius: "12px",
       }}
-      className=""
+      className="my-16"
     >
       <div className="grid grid-cols-2 justify-between items-center">
         <div className=""></div>

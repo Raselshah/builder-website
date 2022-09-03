@@ -160,7 +160,7 @@ const Dashboard = () => {
                 bottom: 0,
               }}
             >
-              <CartesianGrid strokeDasharray="3 3" />
+              <CartesianGrid strokeDasharray="3 0" />
               <XAxis dataKey="name" />
               {/* <YAxis /> */}
               <Tooltip />
@@ -172,6 +172,77 @@ const Dashboard = () => {
               />
             </AreaChart>
           </ResponsiveContainer>
+        </div>
+      </div>
+      <div className="mt-8 grid-cols-3 grid justify-between gap-x-6 items-start">
+        <div className="col-span-2   p-6 border rounded-lg">
+          <div className="flex justify-between items-end">
+            <h2>Property Status</h2>
+            <button className="btn btn-xs border-none bg-sky-400/70">
+              See All
+            </button>
+          </div>
+
+          <div class="overflow-x-auto mt-6">
+            <table class="table w-full text-sm ">
+              <thead>
+                <tr>
+                  <th>Property Name</th>
+                  <th>Property Type</th>
+                  <th>Possession Status</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Brigade Bricklane</td>
+                  <td>Apartment</td>
+                  <td>Ready to move</td>
+                  <td>
+                    <button className="btn btn-xs btn-secondary">
+                      Approved
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Brigade Bricklane</td>
+                  <td>Apartment</td>
+                  <td>Ready to move</td>
+                  <td>
+                    <button className="btn btn-xs btn-secondary">
+                      Approved
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="p-6 border rounded-lg">
+          <div className="flex justify-between items-center">
+            <h2 className="text-lg">Recent Chats</h2>
+            <button className="btn btn-xs border-none bg-sky-400/70">
+              See All
+            </button>
+          </div>
+          <div className="flex justify-between items-center mt-8 gap-x-2">
+            <div className="flex justify-center items-center">
+              <div class="avatar">
+                <div class="w-10 rounded-full">
+                  <img src="https://placeimg.com/192/192/people" alt="" />
+                </div>
+              </div>
+              <div className="pl-4">
+                <h3 className="text-sm">Elegance Homes</h3>
+                <p className="text-xs">
+                  Sure, we will let you know about this{" "}
+                </p>
+              </div>
+            </div>
+            <p className="rounded-full w-2 h-2 text-white text-xl mx-auto bg-blue-400 p-4 flex justify-center items-center">
+              1
+            </p>
+          </div>
         </div>
       </div>
     </div>

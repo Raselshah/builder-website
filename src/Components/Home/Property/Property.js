@@ -5,8 +5,10 @@ import eyeSmall from "../../../Assest/download__13_-removebg-preview 6.png";
 import pencil from "../../../Assest/icons8-pencil-96 1.png";
 import deleted from "../../../Assest/icons8-remove-96 1.png";
 import "../../Style/Style.css";
+import { useNavigate } from "react-router-dom";
 
 const Property = () => {
+  const navigate = useNavigate();
   const tableData = [
     {
       id: "#1001",
@@ -58,7 +60,10 @@ const Property = () => {
           <h2>Pending(2)</h2>
         </div>
         <div className="div">
-          <button className="btn h-9 flex flex-row justify-between items-center button border-none">
+          <button
+            onClick={() => navigate("/userInfo")}
+            className="btn h-9 flex flex-row justify-between items-center button border-none"
+          >
             <span>Post Property</span>
             <img src={home} alt="" />
           </button>
